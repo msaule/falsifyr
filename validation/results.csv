@@ -1,0 +1,8 @@
+"case","model_class","expected","score","verdict","killed","smallest_kill"
+"known fragile lm","lm","fragile",29,"FRAGILE",TRUE,"Influential row deletion"
+"known resilient lm","lm","resilient",100,"RESILIENT",FALSE,
+"grouped deletion lm","lm","supported",19,"COLLAPSES",TRUE,"Influential row deletion"
+"factor coefficient lm","lm","supported",100,"RESILIENT",FALSE,
+"binomial glm","glm","supported",100,"RESILIENT",FALSE,
+"linear mixed model","lmerMod","supported",100,"RESILIENT",FALSE,
+"Cox model","coxph","supported",19,"COLLAPSES",TRUE,"Influential row deletion"

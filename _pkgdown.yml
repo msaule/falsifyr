@@ -1,0 +1,32 @@
+url: https://msaule.github.io/falsifyr/
+destination: site
+template:
+  bootstrap: 5
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+articles:
+  - title: Getting started
+    contents:
+      - attacking-a-regression-claim
+      - interpreting-survival-scores
+reference:
+  - title: Attack a claim
+    contents:
+      - attack
+      - smallest_kill
+      - attack_leaderboard
+      - report
+  - title: Claim and model infrastructure
+    contents:
+      - extract_claim
+      - refit_model
+      - is_killed
+      - score_survival
+  - title: RStudio
+    contents:
+      - attack_this_claim
+  - title: Data
+    contents:
+      - fragile_trial
+      - resilient_trial

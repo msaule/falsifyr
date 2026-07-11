@@ -1,0 +1,40 @@
+Package: falsifyr
+Title: Adversarial Robustness Attacks for Statistical Claims
+Version: 1.0.0
+Authors@R: 
+    person("Markuss", "Saule", , "markusstomas@gmail.com", role = c("aut", "cre", "cph"))
+Description: Attacks fitted R model claims by searching for small plausible
+    perturbations that make a target result disappear. The package focuses on
+    claim-level fragility, smallest-kill reporting, and reproducible caveated
+    robustness checks for ordinary fitted model objects.
+License: MIT + file LICENSE
+URL: https://github.com/msaule/falsifyr,
+    https://msaule.github.io/falsifyr/
+BugReports: https://github.com/msaule/falsifyr/issues
+Language: en-US
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1)
+Imports:
+    cli,
+    ggplot2,
+    parallel,
+    rlang,
+    stats,
+    tibble,
+    vctrs
+Suggests:
+    broom,
+    knitr,
+    lme4,
+    lmtest,
+    rmarkdown,
+    rstudioapi,
+    sandwich,
+    shiny,
+    survival,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0

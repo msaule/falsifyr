@@ -1,0 +1,17 @@
+^falsifyr_codex_spec[.]md$
+^.*[.]Rcheck$
+^.*[.]tar[.]gz$
+^\.git$
+^\.github$
+^\.gitignore$
+^\.Rproj[.]user$
+^README[.]Rmd$
+^_pkgdown[.]yml$
+^docs$
+^validation$
+^site$
+^[.]lintr$
+^cran-comments[.]md$
+^RELEASING[.]md$
+^doc$
+^Meta$

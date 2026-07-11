@@ -1,0 +1,4 @@
+Name: Attack This Claim
+Description: Attack a fitted statistical claim with falsifyr.
+Binding: attack_this_claim
+Interactive: true
