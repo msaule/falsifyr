@@ -40,6 +40,7 @@
 <ul><li>Added the claim-first <code>attack(model, term)</code> engine and ranked smallest-kill output.</li>
 <li>Added row deletion (ranked, greedy, beam, and grouped), uncertainty, covariate, missingness, measurement-error, placebo, specification, and split attack families.</li>
 <li>Added support for <code>lm</code>, <code>glm</code>, <code>aov</code>, <code>lmerMod</code>, <code>glmerMod</code>, and <code>coxph</code> perturbation workflows, plus explicit limited support for <code>htest</code> and <code>anova</code> objects that do not retain refittable source data.</li>
+<li>Added optional <code><a href="https://generics.r-lib.org/reference/tidy.html" class="external-link">broom::tidy()</a></code> and <code><a href="https://generics.r-lib.org/reference/glance.html" class="external-link">broom::glance()</a></code> methods for attack leaderboards and claim summaries.</li>
 <li>Added deterministic fast/normal/deep/insane intensity profiles, claim and attack registries, and two-worker parallel family execution.</li>
 <li>Added survival scoring, verdicts, smallest-kill and leaderboard accessors, console/plot output, standalone HTML reports, and the RStudio addin.</li>
 <li>Added synthetic fragile/resilient data, vignettes, a GitHub-only validation corpus, and cross-platform R CMD check automation.</li>

@@ -74,6 +74,10 @@ For `lmerMod` objects, coefficient p-values use an explicitly labeled
 Wald normal approximation when the fitted model does not provide
 p-values.
 
+When `broom` is installed, `broom::tidy(result)` returns the attack
+leaderboard and `broom::glance(result)` returns a one-row claim and
+verdict summary.
+
 ## Reports and addin
 
 ``` r
@@ -127,6 +131,8 @@ smallest plausible perturbation that changes the conclusion.
   : Decide whether a perturbed claim is killed
 - [`score_survival()`](https://msaule.github.io/falsifyr/reference/score_survival.md)
   : Score claim survival
+- [`broom-methods`](https://msaule.github.io/falsifyr/reference/broom-methods.md)
+  : Convert an attack result to a tidy leaderboard
 
 ## RStudio
 

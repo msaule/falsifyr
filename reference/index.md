@@ -21,6 +21,8 @@
   : Decide whether a perturbed claim is killed
 - [`score_survival()`](https://msaule.github.io/falsifyr/reference/score_survival.md)
   : Score claim survival
+- [`broom-methods`](https://msaule.github.io/falsifyr/reference/broom-methods.md)
+  : Convert an attack result to a tidy leaderboard
 
 ## RStudio
 

@@ -81,5 +81,5 @@ scripted workflows.
 ``` r
 report_file <- report(res, file = tempfile(fileext = ".html"))
 basename(report_file)
-#> [1] "file105542bc43599.html"
+#> [1] "fileeefc7aec2487.html"
 ```

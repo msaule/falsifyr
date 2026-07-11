@@ -74,6 +74,10 @@ For `lmerMod` objects, coefficient p-values use an explicitly labeled
 Wald normal approximation when the fitted model does not provide
 p-values.
 
+When `broom` is installed, `broom::tidy(result)` returns the attack
+leaderboard and `broom::glance(result)` returns a one-row claim and
+verdict summary.
+
 ## Reports and addin
 
 ``` r
