@@ -10,12 +10,21 @@ falsifyr attacks fitted model claims with row deletion, alternative standard
 errors, covariate drops, missing-data perturbations, measurement error,
 placebo checks, and bounded specification search.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/msaule/falsifyr}
+  \item \url{https://msaule.github.io/falsifyr/}
+  \item Report bugs at \url{https://github.com/msaule/falsifyr/issues}
+}
+
+}
 \author{
-\strong{Maintainer}: Falsifyr Contributors \email{hello@example.com}
+\strong{Maintainer}: Markuss Saule \email{markusstomas@gmail.com} [copyright holder]
 
 Authors:
 \itemize{
-  \item Falsifyr Contributors \email{hello@example.com}
+  \item Markuss Saule \email{markusstomas@gmail.com} [copyright holder]
 }
 
 }

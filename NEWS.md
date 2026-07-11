@@ -10,6 +10,8 @@
 - Added support for `lm`, `glm`, `aov`, `lmerMod`, `glmerMod`, and `coxph`
   perturbation workflows, plus explicit limited support for `htest` and `anova`
   objects that do not retain refittable source data.
+- Added optional `broom::tidy()` and `broom::glance()` methods for attack
+  leaderboards and claim summaries.
 - Added deterministic fast/normal/deep/insane intensity profiles, claim and
   attack registries, and two-worker parallel family execution.
 - Added survival scoring, verdicts, smallest-kill and leaderboard accessors,
