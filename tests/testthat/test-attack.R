@@ -119,7 +119,7 @@ test_that("attack records reproducibility metadata", {
   expect_type(res$runtime$package_version, "character")
   expect_type(res$runtime$r_version, "character")
   expect_true(is.character(res$runtime$session_info))
-  expect_true(any(grepl("R version", res$runtime$session_info, fixed = TRUE)))
+  expect_true(any(grepl("^R (version|Under development)", res$runtime$session_info)))
   expect_gte(res$runtime$elapsed_sec, 0)
 })
 
