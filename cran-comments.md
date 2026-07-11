@@ -1,7 +1,8 @@
 ## Test environments
 
 - local Windows 11, R 4.6.1
-- GitHub Actions: Ubuntu, macOS, and Windows with R release
+- GitHub Actions: Ubuntu with R-devel and R release; macOS and Windows with R
+  release
 
 ## R CMD check results
 
