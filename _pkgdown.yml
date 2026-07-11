@@ -23,6 +23,7 @@ reference:
       - refit_model
       - is_killed
       - score_survival
+      - broom-methods
   - title: RStudio
     contents:
       - attack_this_claim
