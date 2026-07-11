@@ -59,6 +59,13 @@ and user-authored multiverse territory.
 
 The package uses optional dependencies conditionally, avoids network access and
 external services at runtime, writes report examples only to temporary paths,
-caps parallelism for CRAN, and ships deterministic examples/tests. The local
-release process builds vignettes, a PDF manual, the pkgdown site, and a source
-tarball under current R before CRAN submission.
+caps parallelism for CRAN, and ships deterministic examples/tests. The final
+source package passed `R CMD check --as-cran` under R 4.6.1 with zero errors,
+zero warnings, and the expected new-submission note. GitHub Actions also passed
+on Windows release, macOS release, Ubuntu release, and Ubuntu R-devel. The test
+suite reaches 82.3% measured coverage, and the release process builds the
+vignettes, PDF manual, pkgdown site, and source tarball.
+
+Version 1.0.0 was submitted to CRAN on July 11, 2026 UTC and is awaiting the
+maintainer email confirmation. The submitted 53,000-byte archive has SHA-256
+`F875A9DDCF6524F69F02C26B32D521FA3948717957F0AD43F749E38D2BE4E529`.
