@@ -4,12 +4,13 @@
 \alias{report}
 \title{Write an HTML attack report}
 \usage{
-report(result, file = "falsifyr_report.html")
+report(result, file)
 }
 \arguments{
 \item{result}{A \code{falsifyr_attack} object returned by \code{\link[=attack]{attack()}}.}
 
-\item{file}{Output HTML file path.}
+\item{file}{Output HTML file path. This argument is required; \code{report()}
+never writes to the working directory by default.}
 }
 \value{
 The normalized output path, invisibly.

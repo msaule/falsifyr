@@ -6,13 +6,19 @@ Authors@R:
 Description: Attacks fitted R model claims by searching for small plausible
     perturbations that make a target result disappear. The package focuses on
     claim-level fragility, smallest-kill reporting, and reproducible caveated
-    robustness checks for ordinary fitted model objects.
+    robustness checks for ordinary fitted model objects. The methods draw on
+    the fragility-index concept of Walsh et al. (2014)
+    <doi:10.1016/j.jclinepi.2013.10.019>, multiverse analysis of Steegen et al.
+    (2016) <doi:10.1177/1745691616658637>, specification-curve analysis of
+    Simonsohn et al. (2020) <doi:10.1038/s41562-020-0912-z>, and robust
+    covariance estimation of Zeileis (2004) <doi:10.18637/jss.v011.i10>.
 License: MIT + file LICENSE
 URL: https://github.com/msaule/falsifyr,
     https://msaule.github.io/falsifyr/
 BugReports: https://github.com/msaule/falsifyr/issues
 Language: en-US
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 Depends:
     R (>= 4.1)

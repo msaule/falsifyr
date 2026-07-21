@@ -34,6 +34,15 @@ test_that("report writes an html file", {
   expect_match(html, "row_deletion", fixed = TRUE)
 })
 
+test_that("report requires an explicit output path", {
+  fit <- lm(score ~ treatment + age + baseline_score, data = fragile_trial)
+  res <- attack(fit, term = "treatment", attacks = "row_deletion", intensity = "fast")
+  files_before <- list.files(getwd(), all.files = TRUE)
+
+  expect_error(report(res), "`file` must be supplied", fixed = TRUE)
+  expect_equal(list.files(getwd(), all.files = TRUE), files_before)
+})
+
 test_that("print output includes weakest assumptions and next actions", {
   fit <- lm(score ~ treatment + age + baseline_score, data = fragile_trial)
   res <- attack(fit, term = "treatment", attacks = "row_deletion", intensity = "fast")

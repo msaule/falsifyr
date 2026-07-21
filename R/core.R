@@ -566,7 +566,8 @@ plot.falsifyr_attack <- function(x, ...) {
 #' Creates a standalone static HTML report for a `falsifyr_attack` object.
 #'
 #' @param result A `falsifyr_attack` object returned by [attack()].
-#' @param file Output HTML file path.
+#' @param file Output HTML file path. This argument is required; `report()`
+#'   never writes to the working directory by default.
 #'
 #' @return The normalized output path, invisibly.
 #' @examples
@@ -575,9 +576,13 @@ plot.falsifyr_attack <- function(x, ...) {
 #' out <- report(result, file = tempfile(fileext = ".html"))
 #' file.exists(out)
 #' @export
-report <- function(result, file = "falsifyr_report.html") {
+report <- function(result, file) {
   if (!inherits(result, "falsifyr_attack")) {
     stop("`result` must be a falsifyr_attack object.", call. = FALSE)
+  }
+  if (missing(file) || !is.character(file) || length(file) != 1L ||
+      is.na(file) || !nzchar(file)) {
+    stop("`file` must be supplied as one non-empty output path.", call. = FALSE)
   }
   html <- paste0(
     "<!doctype html><html><head><meta charset='utf-8'>",
