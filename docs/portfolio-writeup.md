@@ -66,6 +66,11 @@ on Windows release, macOS release, Ubuntu release, and Ubuntu R-devel. The test
 suite reaches 82.3% measured coverage, and the release process builds the
 vignettes, PDF manual, pkgdown site, and source tarball.
 
-Version 1.0.0 was submitted to CRAN on July 11, 2026 UTC and is awaiting the
-maintainer email confirmation. The submitted 53,000-byte archive has SHA-256
-`F875A9DDCF6524F69F02C26B32D521FA3948717957F0AD43F749E38D2BE4E529`.
+Version 1.0.0 entered CRAN review on July 11, 2026 UTC. CRAN requested method
+references, explicit dataset value documentation, removal of a default report
+path, and removal of fixed seeds from runtime dataset generation. Those items
+were corrected at their source, the datasets were converted to standard static
+package data, and the package again passed `R CMD check --as-cran` with zero
+errors and zero warnings. The corrected 58,969-byte archive was resubmitted on
+July 21, 2026 UTC and is awaiting maintainer email confirmation. Its SHA-256 is
+`7FFA8F987E363FFF2D6408854C4F41FDB2107E05AFF545FF438A402DB6A84372`.
