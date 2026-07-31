@@ -18,8 +18,13 @@
 #' @return `tidy.falsifyr_attack()` returns the ranked attack tibble without
 #'   list-column payloads. `glance.falsifyr_attack()` returns a one-row tibble
 #'   summarizing the claim, verdict, score, and attack counts.
+#' @usage
+#' tidy.falsifyr_attack(x, ...)
+#'
+#' glance.falsifyr_attack(x, ...)
 #'
 #' @name broom-methods
+#' @aliases tidy.falsifyr_attack glance.falsifyr_attack
 NULL
 
 tidy.falsifyr_attack <- function(x, ...) {

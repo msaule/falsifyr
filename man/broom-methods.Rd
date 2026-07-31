@@ -2,7 +2,14 @@
 % Please edit documentation in R/broom.R
 \name{broom-methods}
 \alias{broom-methods}
+\alias{tidy.falsifyr_attack}
+\alias{glance.falsifyr_attack}
 \title{Convert an attack result to a tidy leaderboard}
+\usage{
+tidy.falsifyr_attack(x, ...)
+
+glance.falsifyr_attack(x, ...)
+}
 \arguments{
 \item{x}{A \code{falsifyr_attack} object.}
 

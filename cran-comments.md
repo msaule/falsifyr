@@ -29,3 +29,15 @@ This is a resubmission. In this version I have:
   `tempfile()`; and
 - replaced runtime data-generation functions and their fixed seeds with static
   package datasets.
+
+## Incoming pretest fixes
+
+This resubmission additionally addresses the CRAN incoming pretests:
+
+- added `inst/WORDLIST` for legitimate package terminology and cited author
+  names used in `DESCRIPTION`; and
+- added generated `\usage` and matching `\alias` entries for the optional
+  `broom` S3 methods.
+
+The rebuilt source archive passes local `R CMD check --as-cran` under R 4.6.1
+with 0 errors, 0 warnings, and the expected new-submission note only.
